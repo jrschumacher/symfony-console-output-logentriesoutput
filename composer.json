@@ -1,0 +1,26 @@
+{
+    "name": "jrschumacher/symfony-console-output-logentriesoutput",
+    "description": "Console output to Logentries",
+    "authors": [
+        {
+            "name": "Ryan Schumacher",
+            "email": "j.r.schumacher@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jrschumacher/le_php"
+        }
+    ],
+    "require": {
+        "symfony/console": "*",
+        "logentries/logentries": "dev-composer"
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Component\\Console\\Output\\": "src" }
+    },
+    "autoload-dev": {
+        "psr-4": {"Symfony\\Component\\Console\\Tests\\Output\\": "tests"}
+    }
+}
